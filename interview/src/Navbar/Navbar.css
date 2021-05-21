@@ -1,0 +1,67 @@
+a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
+.logo {
+  width: 50px;
+}
+
+.user__avatar {
+  width: 50px;
+}
+
+nav.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 30px;
+
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+
+  background: #f7f2ee;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.user__name {
+  transition: 0.2s ease-in-out;
+}
+
+a.blog {
+  position: relative;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+
+.blog:hover,
+.user__name:hover {
+  color: #aaa;
+}
+
+.blog::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -200%;
+
+  /* background: red; */
+
+  width: 0;
+  height: 0;
+
+  border-top: 20px solid #f7f2ee;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}

@@ -1,0 +1,35 @@
+.comments {
+  display: flex;
+  padding-top: 20px;
+}
+
+a {
+  display: block;
+}
+
+img {
+  width: 100%;
+}
+
+.comment__avatar {
+  width: 50px;
+}
+
+.comment-info {
+  width: 100%;
+  padding-left: 50px;
+}
+
+.comment-info__name,
+.comment-info__reply {
+  color: #7b6b6b;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.comment-info__name span {
+  color: #ccc;
+}
+.comment-info__content {
+  margin-bottom: 10px;
+}
